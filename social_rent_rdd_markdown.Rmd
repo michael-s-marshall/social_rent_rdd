@@ -1,0 +1,22 @@
+---
+title: "social_rent_rdd_markdown"
+author: "Michael Marshall"
+date: "24/03/2022"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Test code
+
+This is my test code.
+
+```{r}
+pacman::p_load(tidyverse)
+
+diamonds %>% 
+  ggplot(aes(x = cut, y = price)) +
+  geom_boxplot()
+```
