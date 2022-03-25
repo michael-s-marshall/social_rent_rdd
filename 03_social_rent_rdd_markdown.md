@@ -9,49 +9,55 @@ Michael Marshall
 
 In October 2017, the government announced it would provide additional
 funding for the supply of new social rented housing via Homes England.
-But it would only provider additional funding in areas of [‘high
+But it would only provide additional funding in areas of [‘high
 affordability
 pressure’](%22https://www.gov.uk/government/publications/areas-of-high-affordability-pressure/list-areas-of-high-affordability-pressure%22),
 defined by the government as local authorities where the gap between
 average social rents and average private rents is 50 GBP or more.
 
-The analysis below treats this policy as a natural experiment, whereby
+The analysis below views this policy as a natural experiment, whereby
 the treatment is whether social rent is grant funded in a local
 authority or not, and the outcome is the rate of social rent delivery
 within a local authority in a given year.
 
 The data for the analysis is:
 
--   DLUHC: Live table 1011S: Additional Affordable Housing Supply;
-    detailed breakdown by Local Authority, Starts on site  
--   DLUHC: Live table 125: dwelling stock estimates by local authority
-    district  
--   RSH: Statistical data return (SDR) for private registered providers,
-    years 2015/16 to 2019/29  
--   VOA: Private rental market statistics, years 2015/16 to 2017/18  
--   ONS: Private rental market summary statistics in England, years
-    2018/19 to 2019/20
+-   [DLUHC: Live table 1011S: Additional Affordable Housing Supply;
+    detailed breakdown by Local Authority, Starts on
+    site](https://www.gov.uk/government/statistical-data-sets/live-tables-on-affordable-housing-supply)  
+-   [DLUHC: Live table 125: dwelling stock estimates by local authority
+    district](https://www.gov.uk/government/statistical-data-sets/live-tables-on-dwelling-stock-including-vacants)  
+-   [RSH: Statistical data return (SDR) for private registered
+    providers, years 2015/16 to
+    2019/20](https://www.gov.uk/government/collections/statistical-data-return-statistical-releases)  
+-   [VOA: Private rental market statistics, years 2015/16 to
+    2017/18](https://www.gov.uk/government/collections/private-rental-market-statistics)  
+-   [ONS: Private rental market summary statistics in England, years
+    2018/19 to
+    2019/20](https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/privaterentalmarketsummarystatisticsinengland)
 
 Within the dataset, each observation is a local authority within a given
 year. London local authorities are excluded as they are funded via the
-Greater London Authority (GLA), not Homes England. The treatment
-variable is the gap between average social rents and private rents in
-GBP, and this calculated using the SDR, VOA and ONS data (as per the
-Homes England explanation of their methodology). The outcome variable is
-the number of social rent starts on site within a given local authority.
-However, this outcome is modelled in three different ways:
+Greater London Authority (GLA), not Homes England. The continuous
+variable that defines the treatment is the gap between average social
+rents and private rents in GBP, and this is calculated using the SDR,
+VOA and ONS data (as per the Homes England explanation of their
+methodology). The treatment is having an affordability gap above 50 GBP.
+The outcome variable is the number of social rent starts on site within
+a given local authority. However, this outcome is calculated in three
+different ways, yielding three dependent variables:
 
--   Social rent starts as a proportion of all affordable homes starts
+1.  Social rent starts as a proportion of all affordable homes starts
     within the local authority  
--   Social rent starts as a rate per 1,000 existing dwellings in the
+2.  Social rent starts as a rate per 1,000 existing dwellings in the
     local authority  
--   Social rent starts by housing associations (also known as Private
+3.  Social rent starts by housing associations (also known as Private
     Registered Providers, hereby PRPs), as a rate per 1,000 existing
     dwellings in the local authority
 
 The research question is *“what effect did the increase in social rent
 grant funding have on the rate of social rent delivery in local
-authorities, in particular social rented housing delivered by PRPs?”*
+authorities, especially social rented housing delivered by PRPs?”*
 However, two other dependent variables are modelled in the analysis as
 comparators. The comparator dependent variables, and their purposes as
 comparators, are:
@@ -63,37 +69,37 @@ comparators, are:
     but with a higher proportion of social rent?  
 -   Total affordable rent starts as a rate per 1,000 dwellings in the
     local authority – used as a placebo to provide increased confidence
-    that any treatment effect identified in the analysis is genuine, as
-    we should see no effect on affordable rent starts from increase
-    social rent funding
+    that any treatment effect identified in the analysis is genuine. In
+    other words, we should expect to see no effect on affordable rent
+    starts from increased social rent funding, and so if we find an
+    effect for social renting but not affordable renting, this increases
+    our confidence the social rent treatment effect is genuine and not a
+    result of chance.
 
 The analysis uses a regression discontinuity design (RDD) to model the
 treatment effect of grant funding. RDD offers a methodology for causal
 inference in natural experiments where a disjuncture in a continuous
 independent variable defines the binary treatment variable. In other
 words, the affordability gap between social and private rents features a
-*discontinuity* at the 50 GBP point, around which the treatment effect
+*discontinuity* at the 50 GBP point, around which the treatment status
 switches from control (i.e. no grant) to treatment (i.e. grant funding).
 A binary dummy variable for the presence of treatment is included in a
-regression analysis, alongside the continuous affordability gap variable
-(centred at the point of discontinuity), and as such the model intercept
-is the average social rented delivery in the control group and the
-coefficient of the treatment dummy variable is the
+regression analysis, controlling for the continuous affordability gap
+variable (centred at the point of discontinuity). As such the model
+intercept is the average social rented delivery in the control group,
+and the coefficient of the treatment dummy variable is the
 *average-treatment-effect-on-the-treated (ATT)*.
 
-Within RDD, estimates are sensitive to different parametric
-specifications of the known (or assumed) functional form of the
-continuous variable (i.e. affordability gap). This analysis assumes a
-simple linear regression model for the functional form of the
-affordability gap. The visualisations of the ATTs in following each
-model show no independent effect of the continuous affordability gap
-variable, and therefore this functional form is unlikely to bias the
-ATT. Moreover, due to the non-randomisation of the treatment effect in
-an RDD, the ATT estimate only applies to observations around the point
-of discontinuity (i.e. those close to the 50 GBP threshold). Therefore,
-it is common to conduct a sensitvity analysis whereby the RDD is
-repeated on a subsample of observations close to the point of
-discontinuity.
+Due to the non-randomisation of the treatment status in an RDD, the ATT
+estimate only applies to observations around the point of discontinuity
+(i.e. those close to the 50 GBP threshold). Therefore, it is common to
+conduct a sensitvity analysis whereby the RDD is repeated on a subsample
+of observations close to the point of discontinuity. This analysis also
+assumes a simple linear regression model for the functional form of the
+running varibale (i.e. affordability gap). The visualisations of the
+ATTs following each model show no independent effect of the
+affordability gap variable, and therefore this functional form is
+unlikely to bias the ATT.
 
 Finally, although the funding was announced in October 2017, there is
 likely to be a lag before any treatment effect is identifiable. This is
@@ -105,31 +111,32 @@ conducting RDD, a set of longitudinal models were produced for each
 dependent variable. The longitudinal models use a multilevel modelling
 framework, including random intercepts for each local authority. Three
 longitudinal models were produced per dependent variable, varying in
-terms of their independent explanatory variables, and as follows:
+terms of their fixed effects, which are as follows:
 
--   additive model with independent effects of the treatment variable
-    and a categorical variable for year  
--   interaction model with treatment effect interacted with each year
+1.  an additive model with independent fixed effects for the treatment
+    variable and a categorical variable for year  
+2.  interaction model with treatment status interacted with each year
     category in the year variable  
--   interaction model with treatment effect interacting with *only* the
+3.  interaction model with treatment status interacting with *only* the
     2019/20 category in year (all other years included as independent
-    effects)
+    fixed effects)
 
 The longitudinal models revealed that the model fit – as measured by AIC
-– was optimised with the model interacting treatment with 2019/20 only.
-The results of these models are shown below with respect to the *social
-rent starts as a proportion of all affordable homes starts* dependent
-variable, but this pattern was replicated across all three dependent
-variables. The findings of the longitudinal model suggest a treatment
-effect from grant funding is plausible, but may not have appeared until
-2019/20. As such, the RDD compares the ATT between 2015/16
-(pre-treatment) and 2019/20 for each dependent variable. Prior to
-modelling, though, a number of exploratory visualisations are presented.
+– was optimised in model 3, whereby treatment interacts with 2019/20
+only. The results of these models are shown below with respect to the
+*social rent starts as a proportion of all affordable homes starts*
+dependent variable, but this pattern was replicated across all three
+dependent variables. The findings of the longitudinal model suggest a
+treatment effect from grant funding is plausible, but may not have
+appeared until 2019/20. As such, the RDD compares the ATT between
+2015/16 (pre-treatment) and 2019/20 (post-treatment) for each dependent
+variable. Prior to modelling, though, a number of exploratory
+visualisations are presented.
 
 # Exploratory visualisations
 
-Figure 1 shows the all affordable home starts by tenure and year,
-including London. There is a clear increase in social rent as a
+Figure 1 shows all affordable home starts by tenure and year, including
+London local authorities. There is a clear increase in social rent as a
 proportion of all affordable homes post-2015-16. And when London
 Affordable Rent is included (which has grant and rent levels comparable
 to social rent), this growth is even higher. There is the potential for
@@ -164,7 +171,7 @@ shows all local authorities, including London.
 
 Figure 4 shows the rate of social renting starts per 1,000 existing
 dwellings in a local authority. It disaggregates the rate by treatment
-effect, showing whether a local authority is *high affordability
+status, showing whether a local authority is *high affordability
 pressure* or not (1 = high pressure). Figure 4 shows the lagged effect
 of the funding change.
 
@@ -537,7 +544,7 @@ al. (2017)](https://www.nature.com/articles/s41562-017-0189-z) regarding
 statistical significance thresholds when identifying novel effects. To
 reduce the likelihood of false positives, they recommend a threshold of
 0.005 for statistical significance, and that the traditional threshold
-of 0.05 should be rebranded as ‘suggestive’ of an assocation. According
+of 0.05 should be rebranded as ‘suggestive’ of an association. According
 to these criteria, a statistically significant effect is found for the
 interaction between treatment and 2019/20 but none of the other years.
 The interaction between treatment and 2016/17 is suggestive of an
@@ -1347,12 +1354,17 @@ was a treatment effect found in 2015/16, giving support to the notion
 that the policy change had an effect on social rented supply.
 
 Figure 7 visualises this treatment effect, showing the proportion of
-affordable homes starts that were social rent by year. The regression
-estimates are split at the point of discontinuity, and the affordability
-gap is centred at this same point. The gap between intercepts around the
-point of discontinuity can therefore be interpreted as the ATT. There is
-a clear increase in social rent proportion in 2019/20 compared to
-2015/16.
+affordable homes starts that were social rent by year. The top two
+panels show the relationship between affordability gap and social rent
+delivery in 2015/16; the estimated OLS regression line is split at the
+point of discontinuity, and the affordability gap is centred at this
+same point. The bottom two panels show the same for 2019/20. The gap
+between intercepts around the point of discontinuity can therefore be
+interpreted as the ATT. In 2015/16 there is very little difference
+between the model intercepts in control and treatment local authorities.
+There is a clear increase in social rent proportion in treatment local
+authorities in 2019/20, as represented by the gap between the intercepts
+in the bottom two panels in Figure 7.
 
 <table style="text-align:center">
 <caption>
@@ -1611,7 +1623,10 @@ per 1,000 existing dwellings. The ATT is estimated as 0.27 new social
 rent starts per 1,000 dwellings in 2019/20, and this effect is
 statistically significant. In the subsample sensitivity analysis, the
 ATT is estimated at 0.26, and the p-value is below 0.05, which is
-interpreted as suggestive of an effect. Figure 8 visualises the ATT.
+interpreted as suggestive of an effect. Figure 8 visualises the ATT,
+again showing very little evidence of a treatment effect in 2015/16, but
+a clear gap between the intercepts of control and treatment groups in
+2019/20.
 
 <table style="text-align:center">
 <caption>
@@ -2130,7 +2145,9 @@ starts per 1,000 existing dwellings. It finds no treatment effect on
 total affordable homes starts. This suggests there is no multiplier
 effect from the policy change i.e. the grant funding is used by PRPs to
 increase the number of social rented homes, not the total number of
-homes. Figure 10 visualises the lack of ATT.
+homes. Figure 10 visualises the lack of ATT, as there is little gap
+between the intercepts of control and treatment groups in both 2015/16
+and 2019/20.
 
 <table style="text-align:center">
 <caption>
@@ -2387,7 +2404,8 @@ Adj. R-squared
 The final analysis shows the placebo of affordable rent starts per 1,000
 existing dwellings. It finds no effect of treatment on the rate of
 affordable rent starts, providing further support of a treatment effect
-from the policy change. Figure 11 visualises the lack of effect.
+from the policy change on social rent starts. Figure 11 visualises the
+lack of effect.
 
 <table style="text-align:center">
 <caption>
