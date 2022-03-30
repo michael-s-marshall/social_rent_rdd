@@ -96,10 +96,12 @@ estimate only applies to observations around the point of discontinuity
 conduct a sensitvity analysis whereby the RDD is repeated on a subsample
 of observations close to the point of discontinuity. This analysis also
 assumes a simple linear regression model for the functional form of the
-running varibale (i.e. affordability gap). The visualisations of the
-ATTs following each model show no independent effect of the
-affordability gap variable, and therefore this functional form is
-unlikely to bias the ATT.
+running varibale (i.e. affordability gap). Different functional forms
+could obviously be modelled. But the visualisations of the ATTs
+(i.e. Figures 7 to 11) suggest the relationship between affordability
+gap and social rent output, independent of the funding policy treatment,
+is orthogonal. And therefore the effect of affordability gap is unlikely
+to differ substantially in different specifications of the model.
 
 Finally, although the funding was announced in October 2017, there is
 likely to be a lag before any treatment effect is identifiable. This is
