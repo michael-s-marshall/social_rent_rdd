@@ -5,6 +5,50 @@ Michael Marshall
 
 # Background: Evidence from a natural experiment on the effects of grant funding on social rented housing delivery
 
+## Executive Summary
+
+In October 2017, the government announced it would provide additional
+funding for the supply of new social rented housing via Homes England.
+But it would only provide additional funding in areas of [‘high
+affordability
+pressure’](%22https://www.gov.uk/government/publications/areas-of-high-affordability-pressure/list-areas-of-high-affordability-pressure%22),
+defined by the government as local authorities where the gap between
+average social rents and average private rents is 50 GBP or more.
+
+The analysis below views this policy as a natural experiment, whereby
+the treatment is whether social rent is grant funded in a local
+authority or not, and the outcome is the rate of social rent delivery
+within a local authority in a given year.
+
+Key findings:
+
+-   Evidence from this natural experiment supports the conclusion that
+    increased Homes England grant for social rent has led to an increase
+    in social rented starts-on-site in the relevant local authorities  
+-   Social rented starts have increased as a proportion of affordable
+    homes delivered in a local authority, with an effect size equivalent
+    to a 10% increase in social rent delivery  
+-   Social rented starts have also increased when measured as a rate per
+    1,000 existing dwellings in each local authority, with an effect
+    size equivalent to 0.27 new social rent starts per 1,000 existing
+    dwellings in 2019/20  
+-   The rate of increase is particularly pronounced among houses started
+    by housing associations, where the effect size is estimated as 0.12
+    new social rent starts by PRPs per 1,000 existing dwellings in
+    2019/20  
+-   By contrast, there was no estimated increase in social rent delivery
+    by local authorities as a result of the funding change, suggesting
+    there are barriers to entry for local authorities in delivering new
+    social rented homes that the grant is insufficient to overcome
+    (e.g. skills and internal capacity)  
+-   Simiarly, there is no effect on the total number of affordable homes
+    delivered as a rate per 1,000 existing dwellings in each local
+    authority; this suggests the higher level of grant funding is being
+    used to deliver a higher rate of social rented homes, but not a
+    higher total number of homes irrespective of tenure (i.e. social
+    rent tied to Homes England grant is replacing other tenures in
+    development programmes, not adding additional capacity)
+
 ## Data and methodology
 
 In October 2017, the government announced it would provide additional
@@ -203,341 +247,45 @@ interactions. It shows no effect of the treatment, but a general
 increase in the proportion of social rented housing each year relative
 to the 2015/16 baseline.
 
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Observations
-</td>
-<td style="text-align:right;">
-1390
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Dependent variable
-</td>
-<td style="text-align:right;">
-prop_sr
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Type
-</td>
-<td style="text-align:right;">
-Mixed effects linear regression
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-AIC
-</td>
-<td style="text-align:right;">
--989.01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-BIC
-</td>
-<td style="text-align:right;">
--941.87
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Pseudo-R² (fixed effects)
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Pseudo-R² (total)
-</td>
-<td style="text-align:right;">
-0.25
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
-<thead>
-<tr>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="6">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-Fixed Effects
-
-</div>
-
-</th>
-</tr>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-Est.
-</th>
-<th style="text-align:right;">
-S.E.
-</th>
-<th style="text-align:right;">
-t val.
-</th>
-<th style="text-align:right;">
-d.f.
-</th>
-<th style="text-align:right;">
-p
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-1.95
-</td>
-<td style="text-align:right;">
-1128.42
-</td>
-<td style="text-align:right;">
-0.05
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-treatment
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
-1.30
-</td>
-<td style="text-align:right;">
-974.13
-</td>
-<td style="text-align:right;">
-0.19
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Year2016-17
-</td>
-<td style="text-align:right;">
-0.05
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-3.84
-</td>
-<td style="text-align:right;">
-1112.89
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Year2017-18
-</td>
-<td style="text-align:right;">
-0.06
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-4.41
-</td>
-<td style="text-align:right;">
-1130.51
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Year2018-19
-</td>
-<td style="text-align:right;">
-0.04
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-3.33
-</td>
-<td style="text-align:right;">
-1163.35
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Year2019-20
-</td>
-<td style="text-align:right;">
-0.05
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-4.03
-</td>
-<td style="text-align:right;">
-1185.68
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-I(afford_gap_median - 50)
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-<td style="text-align:right;">
-0.70
-</td>
-<td style="text-align:right;">
-501.54
-</td>
-<td style="text-align:right;">
-0.49
-</td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-<td style="padding: 0; " colspan="100%">
-<sup></sup> p values calculated using Satterthwaite d.f.
-</td>
-</tr>
-</tfoot>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-Random Effects
-
-</div>
-
-</th>
-</tr>
-<tr>
-<th>
-Group
-</th>
-<th>
-Parameter
-</th>
-<th>
-Std. Dev.
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-LA code
-</td>
-<td>
-(Intercept)
-</td>
-<td>
-0.08
-</td>
-</tr>
-<tr>
-<td>
-Residual
-</td>
-<td>
-</td>
-<td>
-0.15
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-Grouping Variables
-
-</div>
-
-</th>
-</tr>
-<tr>
-<th>
-Group
-</th>
-<th>
-# groups
-</th>
-<th>
-ICC
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-LA code
-</td>
-<td>
-297
-</td>
-<td>
-0.23
-</td>
-</tr>
-</tbody>
-</table>
+    ## MODEL INFO:
+    ## Observations: 1390
+    ## Dependent Variable: prop_sr
+    ## Type: Mixed effects linear regression 
+    ## 
+    ## MODEL FIT:
+    ## AIC = -989.01, BIC = -941.87
+    ## Pseudo-R² (fixed effects) = 0.02
+    ## Pseudo-R² (total) = 0.25 
+    ## 
+    ## FIXED EFFECTS:
+    ## -----------------------------------------------------------------------
+    ##                                   Est.   S.E.   t val.      d.f.      p
+    ## ------------------------------- ------ ------ -------- --------- ------
+    ## (Intercept)                       0.02   0.01     1.95   1128.42   0.05
+    ## treatment                         0.02   0.02     1.30    974.13   0.19
+    ## Year2016-17                       0.05   0.01     3.84   1112.89   0.00
+    ## Year2017-18                       0.06   0.01     4.41   1130.51   0.00
+    ## Year2018-19                       0.04   0.01     3.33   1163.35   0.00
+    ## Year2019-20                       0.05   0.01     4.03   1185.68   0.00
+    ## I(afford_gap_median - 50)         0.00   0.00     0.70    501.54   0.49
+    ## -----------------------------------------------------------------------
+    ## 
+    ## p values calculated using Satterthwaite d.f.
+    ## 
+    ## RANDOM EFFECTS:
+    ## ------------------------------------
+    ##   Group      Parameter    Std. Dev. 
+    ## ---------- ------------- -----------
+    ##  LA code    (Intercept)     0.08    
+    ##  Residual                   0.15    
+    ## ------------------------------------
+    ## 
+    ## Grouping variables:
+    ## ---------------------------
+    ##   Group    # groups   ICC  
+    ## --------- ---------- ------
+    ##  LA code     297      0.23 
+    ## ---------------------------
 
 The second longitudinal model includes an interaction between treatment
 and each category of the year variable. This analysis adopts the
@@ -557,421 +305,49 @@ as a rate of all dwellings, social rent by PRPs as a rate of all
 dwellings). So it was decided to focus on the interaction between
 treatment and 2019/20.
 
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Observations
-</td>
-<td style="text-align:right;">
-1390
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Dependent variable
-</td>
-<td style="text-align:right;">
-prop_sr
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Type
-</td>
-<td style="text-align:right;">
-Mixed effects linear regression
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-AIC
-</td>
-<td style="text-align:right;">
--978.91
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-BIC
-</td>
-<td style="text-align:right;">
--910.83
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Pseudo-R² (fixed effects)
-</td>
-<td style="text-align:right;">
-0.03
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Pseudo-R² (total)
-</td>
-<td style="text-align:right;">
-0.26
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
-<thead>
-<tr>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="6">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-Fixed Effects
-
-</div>
-
-</th>
-</tr>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-Est.
-</th>
-<th style="text-align:right;">
-S.E.
-</th>
-<th style="text-align:right;">
-t val.
-</th>
-<th style="text-align:right;">
-d.f.
-</th>
-<th style="text-align:right;">
-p
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.04
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-2.84
-</td>
-<td style="text-align:right;">
-1352.12
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-treatment
-</td>
-<td style="text-align:right;">
--0.01
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
--0.67
-</td>
-<td style="text-align:right;">
-1371.87
-</td>
-<td style="text-align:right;">
-0.50
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Year2016-17
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
-1.21
-</td>
-<td style="text-align:right;">
-1122.24
-</td>
-<td style="text-align:right;">
-0.22
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Year2017-18
-</td>
-<td style="text-align:right;">
-0.06
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
-3.26
-</td>
-<td style="text-align:right;">
-1143.33
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Year2018-19
-</td>
-<td style="text-align:right;">
-0.03
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
-1.26
-</td>
-<td style="text-align:right;">
-1170.73
-</td>
-<td style="text-align:right;">
-0.21
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Year2019-20
-</td>
-<td style="text-align:right;">
--0.01
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
--0.45
-</td>
-<td style="text-align:right;">
-1171.79
-</td>
-<td style="text-align:right;">
-0.65
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-I(afford_gap_median - 50)
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-<td style="text-align:right;">
-0.56
-</td>
-<td style="text-align:right;">
-497.03
-</td>
-<td style="text-align:right;">
-0.58
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-treatment:Year2016-17
-</td>
-<td style="text-align:right;">
-0.05
-</td>
-<td style="text-align:right;">
-0.03
-</td>
-<td style="text-align:right;">
-2.01
-</td>
-<td style="text-align:right;">
-1134.38
-</td>
-<td style="text-align:right;">
-0.04
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-treatment:Year2017-18
-</td>
-<td style="text-align:right;">
--0.00
-</td>
-<td style="text-align:right;">
-0.03
-</td>
-<td style="text-align:right;">
--0.12
-</td>
-<td style="text-align:right;">
-1151.91
-</td>
-<td style="text-align:right;">
-0.90
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-treatment:Year2018-19
-</td>
-<td style="text-align:right;">
-0.04
-</td>
-<td style="text-align:right;">
-0.03
-</td>
-<td style="text-align:right;">
-1.33
-</td>
-<td style="text-align:right;">
-1175.49
-</td>
-<td style="text-align:right;">
-0.19
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-treatment:Year2019-20
-</td>
-<td style="text-align:right;">
-0.10
-</td>
-<td style="text-align:right;">
-0.03
-</td>
-<td style="text-align:right;">
-3.80
-</td>
-<td style="text-align:right;">
-1178.61
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-<td style="padding: 0; " colspan="100%">
-<sup></sup> p values calculated using Satterthwaite d.f.
-</td>
-</tr>
-</tfoot>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-Random Effects
-
-</div>
-
-</th>
-</tr>
-<tr>
-<th>
-Group
-</th>
-<th>
-Parameter
-</th>
-<th>
-Std. Dev.
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-LA code
-</td>
-<td>
-(Intercept)
-</td>
-<td>
-0.08
-</td>
-</tr>
-<tr>
-<td>
-Residual
-</td>
-<td>
-</td>
-<td>
-0.15
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-Grouping Variables
-
-</div>
-
-</th>
-</tr>
-<tr>
-<th>
-Group
-</th>
-<th>
-# groups
-</th>
-<th>
-ICC
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-LA code
-</td>
-<td>
-297
-</td>
-<td>
-0.23
-</td>
-</tr>
-</tbody>
-</table>
+    ## MODEL INFO:
+    ## Observations: 1390
+    ## Dependent Variable: prop_sr
+    ## Type: Mixed effects linear regression 
+    ## 
+    ## MODEL FIT:
+    ## AIC = -978.91, BIC = -910.83
+    ## Pseudo-R² (fixed effects) = 0.03
+    ## Pseudo-R² (total) = 0.26 
+    ## 
+    ## FIXED EFFECTS:
+    ## ------------------------------------------------------------------------
+    ##                                    Est.   S.E.   t val.      d.f.      p
+    ## ------------------------------- ------- ------ -------- --------- ------
+    ## (Intercept)                        0.04   0.01     2.84   1352.12   0.00
+    ## treatment                         -0.01   0.02    -0.67   1371.87   0.50
+    ## Year2016-17                        0.02   0.02     1.21   1122.24   0.22
+    ## Year2017-18                        0.06   0.02     3.26   1143.33   0.00
+    ## Year2018-19                        0.03   0.02     1.26   1170.73   0.21
+    ## Year2019-20                       -0.01   0.02    -0.45   1171.79   0.65
+    ## I(afford_gap_median - 50)          0.00   0.00     0.56    497.03   0.58
+    ## treatment:Year2016-17              0.05   0.03     2.01   1134.38   0.04
+    ## treatment:Year2017-18             -0.00   0.03    -0.12   1151.91   0.90
+    ## treatment:Year2018-19              0.04   0.03     1.33   1175.49   0.19
+    ## treatment:Year2019-20              0.10   0.03     3.80   1178.61   0.00
+    ## ------------------------------------------------------------------------
+    ## 
+    ## p values calculated using Satterthwaite d.f.
+    ## 
+    ## RANDOM EFFECTS:
+    ## ------------------------------------
+    ##   Group      Parameter    Std. Dev. 
+    ## ---------- ------------- -----------
+    ##  LA code    (Intercept)     0.08    
+    ##  Residual                   0.15    
+    ## ------------------------------------
+    ## 
+    ## Grouping variables:
+    ## ---------------------------
+    ##   Group    # groups   ICC  
+    ## --------- ---------- ------
+    ##  LA code     297      0.23 
+    ## ---------------------------
 
 The table below shows the longitudinal analysis results for the model
 with an interaction between 2019/20 and treatment only. This interaction
@@ -982,361 +358,46 @@ fact, the reduction in AIC from the additive model to the 2019/20
 interaction only model was greatest for the *rate of social rent by PRPs
 per 1,000 existing dwellings* dependent variable.
 
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Observations
-</td>
-<td style="text-align:right;">
-1390
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Dependent variable
-</td>
-<td style="text-align:right;">
-prop_sr
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Type
-</td>
-<td style="text-align:right;">
-Mixed effects linear regression
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-AIC
-</td>
-<td style="text-align:right;">
--995.30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-BIC
-</td>
-<td style="text-align:right;">
--942.93
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Pseudo-R² (fixed effects)
-</td>
-<td style="text-align:right;">
-0.03
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-Pseudo-R² (total)
-</td>
-<td style="text-align:right;">
-0.25
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
-<thead>
-<tr>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="6">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-Fixed Effects
-
-</div>
-
-</th>
-</tr>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-Est.
-</th>
-<th style="text-align:right;">
-S.E.
-</th>
-<th style="text-align:right;">
-t val.
-</th>
-<th style="text-align:right;">
-d.f.
-</th>
-<th style="text-align:right;">
-p
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.03
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-2.52
-</td>
-<td style="text-align:right;">
-1152.05
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-treatment
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
-0.36
-</td>
-<td style="text-align:right;">
-1053.47
-</td>
-<td style="text-align:right;">
-0.72
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-`1920`
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
-0.08
-</td>
-<td style="text-align:right;">
-1161.27
-</td>
-<td style="text-align:right;">
-0.94
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-`1819`
-</td>
-<td style="text-align:right;">
-0.05
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-3.56
-</td>
-<td style="text-align:right;">
-1163.83
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-`1718`
-</td>
-<td style="text-align:right;">
-0.06
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-4.59
-</td>
-<td style="text-align:right;">
-1130.75
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-`1617`
-</td>
-<td style="text-align:right;">
-0.05
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-3.94
-</td>
-<td style="text-align:right;">
-1112.82
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-I(afford_gap_median - 50)
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-<td style="text-align:right;">
-0.62
-</td>
-<td style="text-align:right;">
-501.85
-</td>
-<td style="text-align:right;">
-0.53
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-treatment:`1920`
-</td>
-<td style="text-align:right;">
-0.08
-</td>
-<td style="text-align:right;">
-0.02
-</td>
-<td style="text-align:right;">
-3.76
-</td>
-<td style="text-align:right;">
-1158.57
-</td>
-<td style="text-align:right;">
-0.00
-</td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-<td style="padding: 0; " colspan="100%">
-<sup></sup> p values calculated using Satterthwaite d.f.
-</td>
-</tr>
-</tfoot>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-Random Effects
-
-</div>
-
-</th>
-</tr>
-<tr>
-<th>
-Group
-</th>
-<th>
-Parameter
-</th>
-<th>
-Std. Dev.
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-LA code
-</td>
-<td>
-(Intercept)
-</td>
-<td>
-0.08
-</td>
-</tr>
-<tr>
-<td>
-Residual
-</td>
-<td>
-</td>
-<td>
-0.15
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-Grouping Variables
-
-</div>
-
-</th>
-</tr>
-<tr>
-<th>
-Group
-</th>
-<th>
-# groups
-</th>
-<th>
-ICC
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-LA code
-</td>
-<td>
-297
-</td>
-<td>
-0.23
-</td>
-</tr>
-</tbody>
-</table>
+    ## MODEL INFO:
+    ## Observations: 1390
+    ## Dependent Variable: prop_sr
+    ## Type: Mixed effects linear regression 
+    ## 
+    ## MODEL FIT:
+    ## AIC = -995.30, BIC = -942.93
+    ## Pseudo-R² (fixed effects) = 0.03
+    ## Pseudo-R² (total) = 0.25 
+    ## 
+    ## FIXED EFFECTS:
+    ## -----------------------------------------------------------------------
+    ##                                   Est.   S.E.   t val.      d.f.      p
+    ## ------------------------------- ------ ------ -------- --------- ------
+    ## (Intercept)                       0.03   0.01     2.52   1152.05   0.01
+    ## treatment                         0.01   0.02     0.36   1053.47   0.72
+    ## 1920                              0.00   0.02     0.08   1161.27   0.94
+    ## 1819                              0.05   0.01     3.56   1163.83   0.00
+    ## 1718                              0.06   0.01     4.59   1130.75   0.00
+    ## 1617                              0.05   0.01     3.94   1112.82   0.00
+    ## I(afford_gap_median - 50)         0.00   0.00     0.62    501.85   0.53
+    ## treatment:`1920                   0.08   0.02     3.76   1158.57   0.00
+    ## -----------------------------------------------------------------------
+    ## 
+    ## p values calculated using Satterthwaite d.f.
+    ## 
+    ## RANDOM EFFECTS:
+    ## ------------------------------------
+    ##   Group      Parameter    Std. Dev. 
+    ## ---------- ------------- -----------
+    ##  LA code    (Intercept)     0.08    
+    ##  Residual                   0.15    
+    ## ------------------------------------
+    ## 
+    ## Grouping variables:
+    ## ---------------------------
+    ##   Group    # groups   ICC  
+    ## --------- ---------- ------
+    ##  LA code     297      0.23 
+    ## ---------------------------
 
 # RDD
 

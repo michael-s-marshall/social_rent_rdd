@@ -243,6 +243,23 @@ years_list <- sr_df %>%
 # !!insert imai method script here!! -------------------------------
 ```
 
+
+## Executive Summary  
+
+In October 2017, the government announced it would provide additional funding for the supply of new social rented housing via Homes England. But it would only provide additional funding in areas of ['high affordability pressure']("https://www.gov.uk/government/publications/areas-of-high-affordability-pressure/list-areas-of-high-affordability-pressure"), defined by the government as local authorities where the gap between average social rents and average private rents is 50 GBP or more.
+
+The analysis below views this policy as a natural experiment, whereby the treatment is whether social rent is grant funded in a local authority or not, and the outcome is the rate of social rent delivery within a local authority in a given year.
+
+Key findings: 
+
+* Evidence from this natural experiment supports the conclusion that increased Homes England grant for social rent has led to an increase in social rented starts-on-site in the relevant local authorities  
+* Social rented starts have increased as a proportion of affordable homes delivered in a local authority, with an effect size equivalent to a 10% increase in social rent delivery    
+* Social rented starts have also increased when measured as a rate per 1,000 existing dwellings in each local authority, with an effect size equivalent to 0.27 new social rent starts per 1,000 existing dwellings in 2019/20  
+* The rate of increase is particularly pronounced among houses started by housing associations, where the effect size is estimated as 0.12 new social rent starts by PRPs per 1,000 existing dwellings in 2019/20  
+* By contrast, there was no estimated increase in social rent delivery by local authorities as a result of the funding change, suggesting there are barriers to entry for local authorities in delivering new social rented homes that the grant is insufficient to overcome (e.g. skills and internal capacity)  
+* Simiarly, there is no effect on the total number of affordable homes delivered as a rate per 1,000 existing dwellings in each local authority; this suggests the higher level of grant funding is being used to deliver a higher rate of social rented homes, but not a higher total number of homes irrespective of tenure (i.e. social rent tied to Homes England grant is replacing other tenures in development programmes, not adding additional capacity)  
+
+
 ## Data and methodology  
 
 In October 2017, the government announced it would provide additional funding for the supply of new social rented housing via Homes England. But it would only provide additional funding in areas of ['high affordability pressure']("https://www.gov.uk/government/publications/areas-of-high-affordability-pressure/list-areas-of-high-affordability-pressure"), defined by the government as local authorities where the gap between average social rents and average private rents is 50 GBP or more.
